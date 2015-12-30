@@ -1,0 +1,18 @@
+Package: aopxplorer
+Type: Package
+Title: AOP Networks using D3 in R
+Description: Creates AOP Networks Using the  'JavaScript' D3 library.
+Version: 0.1.1
+Date: 2015-12-29
+Authors@R: c(
+    person("Lyle", "Burgoon", email = "lyle.d.burgoon@usace.army.mil",
+    role = c("aut", "cre")))
+License: CC0
+Depends:
+    R (>= 3.2.3)
+Imports:
+    htmlwidgets (>= 0.3.2)
+Suggests:
+    htmltools (>= 0.2.6),
+    jsonlite
+Enhances: knitr, shiny
