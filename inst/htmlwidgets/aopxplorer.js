@@ -242,7 +242,7 @@ HTMLWidgets.widget({
                             .enter().append('marker')
                             .attr('id', function(d) { return d; })
                             .attr('viewBox', '0 -5 10 10')
-                            .attr('refX', 15)   //this sets where the end of the arrow sits
+                            .attr('refX', 20)   //this sets where the end of the arrow sits
                             .attr('refY', 0)
                             .attr('markerWidth', 6)     //this sets the size of the arrow head
                             .attr('markerHeight', 6)    //this sets the size of the arrow head
