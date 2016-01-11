@@ -1,9 +1,5 @@
 library(shiny)
-library(RCurl)
 library(jsonlite)
-
-data(MisLinks)
-data(MisNodes)
 
 json_aopns <- fromJSON("http://localhost:3000/networks")
 
