@@ -120,7 +120,7 @@ HTMLWidgets.widget({
       .attr("class", "link")
       .style("stroke", options.linkColour)
       .style("opacity", options.opacity)
-      .style("stroke-width", eval("(" + options.linkWidth + ")"))
+      .style("stroke-width", options.linkWidth)
       .style('marker-end', 'url(#suit)')
       .on("mouseover", function(d) {
           d3.select(this)
