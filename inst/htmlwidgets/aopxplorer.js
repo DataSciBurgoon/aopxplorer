@@ -158,7 +158,7 @@ HTMLWidgets.widget({
       .attr("dy", ".35em")
       .text(function(d) { return d.name })
       .style("font", options.fontSize + "px " + options.fontFamily)
-      .style("opacity", options.opacityNoHover)
+      //.style("opacity", options.opacityNoHover)
       .style("pointer-events", "none");
 
     // Add the option for a bounded box
@@ -214,23 +214,23 @@ HTMLWidgets.widget({
       d3.select(this).select("circle").transition()
         .duration(750)
         .attr("r", function(d){return nodeSize(d)+5;});
-      d3.select(this).select("text").transition()
+      /*d3.select(this).select("text").transition()
         .duration(750)
         .attr("x", 13)
         .style("stroke-width", ".5px")
         .style("font", options.clickTextSize + "px " + options.fontFamily)
-        .style("opacity", 1);
+        .style("opacity", 1);*/
     }
 
     function mouseout() {
       d3.select(this).select("circle").transition()
         .duration(750)
         .attr("r", function(d){return nodeSize(d);});
-      d3.select(this).select("text").transition()
+      /*d3.select(this).select("text").transition()
         .duration(1250)
         .attr("x", 0)
         .style("font", options.fontSize + "px " + options.fontFamily)
-        .style("opacity", options.opacityNoHover);
+        .style("opacity", options.opacityNoHover);*/
     }
 
     function click(d) {
