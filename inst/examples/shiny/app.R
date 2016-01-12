@@ -5,15 +5,6 @@ json_aopns <- fromJSON("http://localhost:3000/networks")
 
 #### Server ####
 server <- function(input, output, session) {
-  #observeEvent(input$go, {
-    print("here")
-    json_aopn_specific <- reactive({
-      aopns <- fromJSON(paste("http://localhost:3000/networks/", isolate(input$network)))
-      print("here2!")
-      return(aopns)
-    })
-  #})
-
 
     observeEvent(input$go, {
       print(input$network)
@@ -27,11 +18,6 @@ server <- function(input, output, session) {
                    NodeID = "name", Group = 1, opacity = 100)
       })
     })
-
-
-
-
-
 
 }
 
