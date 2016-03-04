@@ -1,0 +1,6 @@
+name	group
+rar	up
+rar_rxr_heterodimer	down
+hoxb1_gene	down
+Hoxb1	nc
+neural_tube_defect	up
